@@ -1,3 +1,15 @@
+fork of go-peg
+======
+
+This fork adds one feature:
+
+Redefine Comment Character
+
+Instead of "#", you can set it to whatever character you prefer.
+
+Rest of document is copied from original go-peg.
+
+
 go-peg
 ======
 
