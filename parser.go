@@ -9,6 +9,12 @@ const (
 	OptBinaryOperator = "%binop"
 )
 
+
+// Set a custom comment character. Default is #
+func CommentCharacterSet(s string) {
+	rComment.Ope = Seq(Lit(s), Zom(Seq(Npd(&rEndOfLine), Dot())), &rEndOfLine)
+}
+
 // PEG parser generator
 type duplicate struct {
 	name string
